@@ -78,6 +78,48 @@ class DatabaseManager {
         return $v;
     }
 
+    static function query1($con, $queryClause) {
+        try {
+            $v = mysqli_query($con, $queryClause);
+            if(!$v){
+                throw new Exception("Can not get query results");
+            }
+        } catch (Exception $e) {
+            REDLog::writeErrLog($e->getMessage());
+        }
+        return $v;
+    }
+
+    static function query2($con, $table, $columns, $selection, $selectionArgs) {
+        $sqlClause = "select ";
+        if ($columns == null || count($columns) == 0 || $columns[0] === "*") {
+            $sqlClause = $sqlClause ." * ";
+        } else {
+            $sqlClause = $sqlClause .$columns[0];
+            for ($i = 1, $len = count($columns); $i < $len; $i++) {
+                $sqlClause = $sqlClause ."," .$columns[$i];
+            }
+        }
+        $sqlClause = $sqlClause ." from " .$table;
+        try {
+            if($selection == null || $selectionArgs == null || strlen($selectionArgs) == 0) {
+                $v = mysqli_query($con, $sqlClause);
+            } else {
+                $sqlClause = $sqlClause ." WHERE " .$selection;
+                for ($i=1, $len = strlen($selectionArgs); $i <=$len ; $i++) {
+                    $sqlClause = $sqlClause .$selectionArgs[$i - 1];
+                }
+                $v = mysqli_query($con, $sqlClause);
+            }
+            if(!$v){
+                throw new Exception("here is a syntax error: " .$sqlClause);
+            }
+        } catch (Exception $e) {
+            REDLog::writeErrLog($e->getMessage());
+        }
+        return $v;
+    }
+
     static function getCurrentTables($database) {
 
     }

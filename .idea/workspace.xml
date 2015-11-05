@@ -25,8 +25,8 @@
       <file leaf-file-name="TableCreator.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/TableCreator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.09091">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            <state vertical-scroll-proportion="-5.090909">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <marker date="1446627074783" expanded="true" signature="856:868" placeholder="alter table ..." />
                 <marker date="1446627074783" expanded="true" signature="856:939" placeholder="alter table ..." />
@@ -36,42 +36,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseConnect.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/DatabaseConnect.php">
+      <file leaf-file-name="LikelihoodRateFilter.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/filters/dnaran/LikelihoodRateFilter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.727272">
-              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.77748346">
+              <caret line="58" column="72" selection-start-line="58" selection-start-column="72" selection-end-line="58" selection-end-column="72" />
+              <folding>
+                <marker date="1446711704257" expanded="true" signature="642:845" placeholder="select ${$pr..." />
+                <marker date="1446711704257" expanded="true" signature="2041:2053" placeholder="insert into ..." />
+                <marker date="1446711704257" expanded="true" signature="2067:2157" placeholder="select * fro..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="REDTools.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/REDTools/REDTools.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.909091">
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditingTypeFilter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filters/denovo/EditingTypeFilter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.818182">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-              <folding>
-                <marker date="1446697212142" expanded="true" signature="503:515" placeholder="insert into ..." />
-                <marker date="1446697212142" expanded="true" signature="535:619" placeholder="select * fro..." />
-                <marker date="1446697212142" expanded="true" signature="827:839" placeholder="insert into ..." />
-                <marker date="1446697212142" expanded="true" signature="827:841" placeholder="insert into ..." />
-                <marker date="1446697212142" expanded="true" signature="859:872" placeholder="select * fro..." />
-                <marker date="1446697212142" expanded="true" signature="859:873" placeholder="select * fro..." />
-                <marker date="1446697212142" expanded="true" signature="859:943" placeholder="select * fro..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RNAVCFParser.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dataparser/RNAVCFParser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.284041">
-              <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
-              <folding>
-                <marker date="1446700309634" expanded="true" signature="3553:3610" placeholder="insert into ..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -89,13 +73,13 @@
       <file leaf-file-name="DatabaseManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/DatabaseManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.212122">
-              <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.3939394">
+              <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
               <folding>
-                <marker date="1446628258031" expanded="true" signature="823:844" placeholder="select count..." />
-                <marker date="1446628258031" expanded="true" signature="1569:1589" placeholder="drop table i..." />
-                <marker date="1446628258031" expanded="true" signature="1569:1590" placeholder="drop table i..." />
-                <marker date="1446628258031" expanded="true" signature="1569:1592" placeholder="drop table i..." />
+                <marker date="1446703110025" expanded="true" signature="823:844" placeholder="select count..." />
+                <marker date="1446703110025" expanded="true" signature="1569:1589" placeholder="drop table i..." />
+                <marker date="1446703110025" expanded="true" signature="1569:1590" placeholder="drop table i..." />
+                <marker date="1446703110025" expanded="true" signature="1569:1592" placeholder="drop table i..." />
               </folding>
             </state>
           </provider>
@@ -119,10 +103,17 @@
         <option value="$PROJECT_DIR$/REDTools/Tools.php" />
         <option value="$PROJECT_DIR$/test/testREDTools.php" />
         <option value="$PROJECT_DIR$/REDTools/REDTools.php" />
-        <option value="$PROJECT_DIR$/database/DatabaseManager.php" />
         <option value="$PROJECT_DIR$/REDTools/REDLog.php" />
         <option value="$PROJECT_DIR$/filters/denovo/EditingTypeFilter.php" />
         <option value="$PROJECT_DIR$/dataparser/RNAVCFParser.php" />
+        <option value="$PROJECT_DIR$/database/DatabaseManager.php" />
+        <option value="$PROJECT_DIR$/REDTools/SiteBean.php" />
+        <option value="$PROJECT_DIR$/filters/denovo/QualityControlFilter.php" />
+        <option value="$PROJECT_DIR$/filters/denovo/RepeatRegionsFilter.php" />
+        <option value="$PROJECT_DIR$/filters/denovo/SpliceJunctionFilter.php" />
+        <option value="$PROJECT_DIR$/filters/denovo/KnownSNPFilter.php" />
+        <option value="$PROJECT_DIR$/filters/dnaran/DNARNAFilter.php" />
+        <option value="$PROJECT_DIR$/filters/dnaran/LikelihoodRateFilter.php" />
       </list>
     </option>
   </component>
@@ -138,10 +129,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="566" />
-    <option name="y" value="153" />
-    <option name="width" value="1313" />
-    <option name="height" value="810" />
+    <option name="x" value="653" />
+    <option name="y" value="139" />
+    <option name="width" value="1339" />
+    <option name="height" value="882" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -196,6 +187,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="REDTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dnaran" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dataparser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -213,6 +250,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\wamp\www\workspace\lib\filters\denovo" />
       <recent name="E:\wamp\www\workspace\lib\database" />
       <recent name="E:\wamp\www\workspace\lib\test" />
       <recent name="E:\wamp\www\workspace\lib" />
@@ -260,10 +298,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="566" y="153" width="1313" height="810" extended-state="0" />
+    <frame x="653" y="139" width="1339" height="882" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23824209" sideWeight="0.4950495" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23809524" sideWeight="0.4950495" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -273,7 +311,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23824209" sideWeight="0.5049505" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23809524" sideWeight="0.5049505" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -306,10 +344,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
-            <marker date="1446628258031" expanded="true" signature="823:844" placeholder="select count..." />
-            <marker date="1446628258031" expanded="true" signature="1569:1589" placeholder="drop table i..." />
-            <marker date="1446628258031" expanded="true" signature="1569:1590" placeholder="drop table i..." />
-            <marker date="1446628258031" expanded="true" signature="1569:1592" placeholder="drop table i..." />
+            <marker date="1446703110025" expanded="true" signature="823:844" placeholder="select count..." />
+            <marker date="1446703110025" expanded="true" signature="1569:1589" placeholder="drop table i..." />
+            <marker date="1446703110025" expanded="true" signature="1569:1590" placeholder="drop table i..." />
+            <marker date="1446703110025" expanded="true" signature="1569:1592" placeholder="drop table i..." />
           </folding>
         </state>
       </provider>
@@ -359,8 +397,8 @@
         <state vertical-scroll-proportion="0.32388663">
           <caret line="10" column="65" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="65" />
           <folding>
-            <marker date="1446628177749" expanded="true" signature="-1:-1" placeholder="select count..." />
-            <marker date="1446628177749" expanded="true" signature="-1:-1" placeholder="drop table i..." />
+            <marker date="1446703110044" expanded="true" signature="-1:-1" placeholder="select count..." />
+            <marker date="1446703110044" expanded="true" signature="-1:-1" placeholder="drop table i..." />
           </folding>
         </state>
       </provider>
@@ -397,14 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/REDTools/REDTools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48322147">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/infoLog.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -421,23 +451,136 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/DatabaseConnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8081991">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataparser/RNAVCFParser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4919473">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <marker date="1446700309634" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters/denovo/EditingTypeFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28111273">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+          <folding>
+            <marker date="1446697212142" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446697212142" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+            <marker date="1446697212142" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446697212142" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/REDTools/SiteBean.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47291362">
+          <caret line="175" column="23" selection-start-line="175" selection-start-column="23" selection-end-line="175" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters/denovo/QualityControlFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6969695">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <marker date="1446703971177" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446703971177" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446703971177" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446703971177" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446703971177" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446703971177" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446703971177" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446703971177" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters/denovo/RepeatRegionsFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7387755">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding>
+            <marker date="1446705856458" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446705856458" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+            <marker date="1446705856458" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+            <marker date="1446705856458" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446705856458" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+            <marker date="1446705856458" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446705856458" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters/denovo/SpliceJunctionFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70612246">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <marker date="1446706459545" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446706459545" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters/denovo/KnownSNPFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73112583">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1446709295954" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446709295954" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/DatabaseManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.212122">
-          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.3939394">
+          <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
           <folding>
-            <marker date="1446628258031" expanded="true" signature="823:844" placeholder="select count..." />
-            <marker date="1446628258031" expanded="true" signature="1569:1589" placeholder="drop table i..." />
-            <marker date="1446628258031" expanded="true" signature="1569:1590" placeholder="drop table i..." />
-            <marker date="1446628258031" expanded="true" signature="1569:1592" placeholder="drop table i..." />
+            <marker date="1446703110025" expanded="true" signature="823:844" placeholder="select count..." />
+            <marker date="1446703110025" expanded="true" signature="1569:1589" placeholder="drop table i..." />
+            <marker date="1446703110025" expanded="true" signature="1569:1590" placeholder="drop table i..." />
+            <marker date="1446703110025" expanded="true" signature="1569:1592" placeholder="drop table i..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/REDTools/REDTools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.909091">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters/dnaran/DNARNAFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77748346">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1446710553657" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1446710553657" expanded="true" signature="-1:-1" placeholder="select * fro..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/TableCreator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.09091">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        <state vertical-scroll-proportion="-5.090909">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <marker date="1446627074783" expanded="true" signature="856:868" placeholder="alter table ..." />
             <marker date="1446627074783" expanded="true" signature="856:939" placeholder="alter table ..." />
@@ -446,36 +589,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/DatabaseConnect.php">
+    <entry file="file://$PROJECT_DIR$/filters/dnaran/LikelihoodRateFilter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.727272">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filters/denovo/EditingTypeFilter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.818182">
-          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.77748346">
+          <caret line="58" column="72" selection-start-line="58" selection-start-column="72" selection-end-line="58" selection-end-column="72" />
           <folding>
-            <marker date="1446697212142" expanded="true" signature="503:515" placeholder="insert into ..." />
-            <marker date="1446697212142" expanded="true" signature="535:619" placeholder="select * fro..." />
-            <marker date="1446697212142" expanded="true" signature="827:839" placeholder="insert into ..." />
-            <marker date="1446697212142" expanded="true" signature="827:841" placeholder="insert into ..." />
-            <marker date="1446697212142" expanded="true" signature="859:872" placeholder="select * fro..." />
-            <marker date="1446697212142" expanded="true" signature="859:873" placeholder="select * fro..." />
-            <marker date="1446697212142" expanded="true" signature="859:943" placeholder="select * fro..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataparser/RNAVCFParser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.284041">
-          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
-          <folding>
-            <marker date="1446700309634" expanded="true" signature="3553:3610" placeholder="insert into ..." />
+            <marker date="1446711704257" expanded="true" signature="642:845" placeholder="select ${$pr..." />
+            <marker date="1446711704257" expanded="true" signature="2041:2053" placeholder="insert into ..." />
+            <marker date="1446711704257" expanded="true" signature="2067:2157" placeholder="select * fro..." />
           </folding>
         </state>
       </provider>
