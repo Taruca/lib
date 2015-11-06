@@ -32,5 +32,26 @@ class TableCreator {
             REDLog::writeErrLog($e->getMessage());
         }
     }
+
+    static function createReferenceTable($con, $tableName, $columnNames, $columnParams, $index) {
+        if($columnNames == null || $columnParams == null || count($columnNames) == 0 || count($columnNames) != count($columnParams)) {
+            REDLog::writeErrLog("Column names and column parameters can not be null or zero-length");
+        }
+        $stringBuilder = "create table if not exists $tableName($columnNames[0] $columnParams[0]";
+        for($i = 1, $len = count($columnNames); $i < $len; $i++) {
+            $stringBuilder = $stringBuilder .", $columnNames[$i] $columnParams[$i]";
+        }
+        $stringBuilder = $stringBuilder .",$index)";
+        try {
+            $v = mysqli_query($con, $stringBuilder);
+            if(!$v){
+                throw new Exception("There is a syntax error for SQL clause: $stringBuilder");
+            }
+        } catch (Exception $e) {
+            REDLog::writeErrLog($e->getMessage());
+        }
+        return $v;
+    }
+
 }
 ?>

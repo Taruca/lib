@@ -120,8 +120,18 @@ class DatabaseManager {
         return $v;
     }
 
-    static function getCurrentTables($database) {
-
+    static function getCurrentTables($con, $database) {
+        $v = mysqli_query($con, "use $database");
+        if(!$v) {
+            REDLog::writeErrLog("can not use database: $database when getCurrentTables");
+        }
+        $rs = mysqli_query($con, "show tables");
+        $i = 0;
+        while ($row = mysqli_fetch_array($rs)) {
+            $tableLists[$i] = $row;
+            $i ++;
+        }
+        return $tableLists;
     }
 
 }
