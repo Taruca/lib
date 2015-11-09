@@ -1,0 +1,9 @@
+Start loading Ref Seq Gene File into database......2015-11-09 07:55:47pm
+Start loading Ref Seq Gene File into database......2015-11-09 07:57:16pm
+End loading Ref Seq Gene File into database......2015-11-09 07:57:16pm
+Start loading Ref Seq Gene File into database......2015-11-09 08:00:47pm
+End loading Ref Seq Gene File into database......2015-11-09 08:00:47pm
+Start loading Ref Seq Gene File into database......2015-11-09 08:01:41pm
+End loading Ref Seq Gene File into database......2015-11-09 08:01:41pm
+Start loading Ref Seq Gene File into database......2015-11-09 08:02:41pm
+End loading Ref Seq Gene File into database......2015-11-09 08:39:28pm

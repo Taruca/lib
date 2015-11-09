@@ -1,8 +1,8 @@
 <?php
 class REDLog {
     static $logType = 3;
-    static $errLogPath = '../logs/errLog.txt';
-    static $infoLogPath = '../logs/infoLog.txt';
+    static $errLogPath = 'E:/wamp/www/workspace/lib/logs/errLog.txt';
+    static $infoLogPath = 'E:/wamp/www/workspace/lib/logs/infoLog.txt';
 
     function __construct() {}
 

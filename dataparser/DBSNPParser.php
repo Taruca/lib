@@ -1,6 +1,6 @@
 <?php
 class DBSNPParser {
-    static $dbName = "REDWeb";
+    static $dbName = "redweb";
 
     function __construct() {}
 
@@ -45,6 +45,7 @@ class DBSNPParser {
                 fclose($fp);
                 $sqlClause = "load data local infile '$dbSNPPath' into table $dbSNPTable
 				fields terminated by '\t' lines terminated by '\n' IGNORE $count LINES";
+                echo $sqlClause;
                 $v = mysqli_query($con, $sqlClause);
                 if (!$v) {
                     throw new Exception("Error execute sql clause in loadDbSNPTable()");

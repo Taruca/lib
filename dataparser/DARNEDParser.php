@@ -1,11 +1,13 @@
 <?php
 class DARNEDParser {
+    //tested
+    static $dbName = "REDWeb";
 
     function __construct() {}
 
     static function createDARNEDTable($con, $tableName) {
         try {
-            $tableLists = DatabaseManager::getCurrentTables($con, "taruca");
+            $tableLists = DatabaseManager::getCurrentTables($con, self::$dbName);
             $v = in_array($tableName, $tableLists);
             if (!$v) {
                 $rs = false;
@@ -68,7 +70,7 @@ class DARNEDParser {
             }
         }
         REDLog::writeInfoLog("End loading DARNED file into database");
-        
+
     }
 
 }

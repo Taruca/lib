@@ -1,9 +1,12 @@
 <?php
 class RNAVCFParser {
-
+//tested
     function __construct() {}
 
     static function parseMultiRNAVCFFile($con, $vcfPath) {
+        //use userid = 1 to test
+        $userid = 1;
+
         $altColumn = 4;
         $infoColumn = 7;
         $formatColumnIndex = 8;
@@ -61,7 +64,7 @@ class RNAVCFParser {
                         }
                         $tableBuilders = $tableBuilders ."alu varchar(1) default 'F',index(chrom,pos)";
                         for ($j = 0, $len = count($sampleNames); $j < $len; $j++) {
-                            $tableName[$j] = $sampleNames[$j] ."_" ."rnavcf";
+                            $tableName[$j] = $sampleNames[$j] ."_rnavcf_" .$userid;
                             DatabaseManager::deleteTable($con, $tableName[$j]);
                             $v = mysqli_query($con, "create table " .$tableName[$j] ."($tableBuilders)");
                             if (!$v) {
