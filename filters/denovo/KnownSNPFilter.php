@@ -1,6 +1,6 @@
 <?php
 class KnownSNPFilter {
-
+//tested
     function __construct() {}
 
     static function performKnownSNPFilter($con, $previousTable, $currentTable, $args) {
@@ -19,5 +19,10 @@ $dbSnpTable where ($dbSnpTable.chrom=$previousTable.chrom and $dbSnpTable.pos=$p
         }
         REDLog::writeInfoLog("End performing Known SNP Filter");
     }
+
+    static function getName() {
+        return "dbFilter";
+    }
+
 }
 ?>

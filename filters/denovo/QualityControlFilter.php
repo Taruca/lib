@@ -1,5 +1,6 @@
 <?php
 class QualityControlFilter {
+    //tested
 
     function __construct() {}
 
@@ -55,8 +56,8 @@ class QualityControlFilter {
         REDLog::writeInfoLog("End performing Quality Control Filter");
     }
 
-    static function getQCFName() {
-        return "qcfFilter";
+    static function getName() {
+        return "qcFilter";
     }
 }
 ?>

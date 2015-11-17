@@ -1,6 +1,9 @@
 <?php
 class DNARNAFilter {
-    function performDNARNAFilter($con, $previousTable, $currentTable, $args) {
+    //tested
+    function __construct() {}
+
+    static function performDNARNAFilter($con, $previousTable, $currentTable, $args) {
         if ($args == null || count($args) == 0) {
             return;
         } else if (count($args) != 2) {
@@ -26,5 +29,10 @@ $dnaVcfTable.ref='$num1' or $dnaVcfTable.ref='$num2')))";
         }
         REDLog::writeInfoLog("End performing DNA-RNA Filter");
     }
+
+    static function getName() {
+        return "drFilter";
+    }
+
 }
 ?>

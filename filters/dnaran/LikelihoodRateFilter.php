@@ -1,6 +1,6 @@
 <?php
 class LikelihoodRateFilter {
-
+//tested
     function __construct() {}
 
     static function performLikelihoodRateFilter($con, $previousTable, $currentTable, $args) {
@@ -57,6 +57,10 @@ $dnaVcfTable.chrom and $previousTable.pos=$dnaVcfTable.pos";
         DatabaseManager::commit($con);
         DatabaseManager::setAutoCommit($con, true);
         REDLog::writeInfoLog("End performing Likelihood Rate Test Filter");
+    }
+
+    static function getName() {
+        return "lrFilter";
     }
 
 }

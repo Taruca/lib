@@ -1,5 +1,6 @@
 <?php
 class SpliceJunctionFilter {
+    //tested
     function __construct() {}
 
     static function performSpliceJunctionFilter($con, $previousTable, $currentTable, $args) {
@@ -27,5 +28,8 @@ or ($spliceJunctionTable.end<$previousTable.pos+$edge and $spliceJunctionTable.e
         REDLog::writeInfoLog("End performing Splice Junction Filter...");
     }
 
+    static function getName() {
+        return "sjFilter";
+    }
 }
 ?>

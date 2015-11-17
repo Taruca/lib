@@ -1,17 +1,16 @@
 <?php
-class RNAVCFParser {
+class DNAVCFParser {
 //tested
     function __construct() {}
 
-    static function parseMultiRNAVCFFile($con, $vcfPath, $userid) {
-        //use userid = 1 to test
-        $userid = 1;
+    static function parseMultiDNAVCFFile($con, $vcfPath) {
 
+        $refColumn = 3;
         $altColumn = 4;
-        $infoColumn = 7;
+        $filterColumn = 6;
         $formatColumnIndex = 8;
         $columnLength = 0;
-        REDLog::writeInfoLog("Start parsing RNA VCF file");
+        REDLog::writeInfoLog("Start parsing DNA VCF file");
         try {
             $fp = fopen($vcfPath, 'r');
             DatabaseManager::setAutoCommit($con, false);
@@ -30,15 +29,14 @@ class RNAVCFParser {
                         $sampleNames[$j] = $columnStrings[$formatColumnIndex + 1 + $j];
                     }
                     $tableBuilders = "$columnStrings[0] varchar(30),$columnStrings[1] int,$columnStrings[2] varchar(30),
-				    $columnStrings[3] varchar(5),$columnStrings[4] varchar(5),$columnStrings[5] float(10,2),
-				    $columnStrings[6] text,$columnStrings[7] text,";
+				$columnStrings[3] varchar(5),$columnStrings[4] varchar(5),$columnStrings[5] float(10,2),
+				$columnStrings[6] text,$columnStrings[7] text,";
                     continue;
                 }
                 if ($sampleNames == null) {
                     throw new Exception("There are no samples in this vcf file");
                 }
                 $sections = explode("\t", $line);
-
                 for ($i = $formatColumnIndex + 1; $i < $columnLength; $i++) {
                     if (!strpos($sections[$i], ".")) {
                         $contain = false;
@@ -47,7 +45,7 @@ class RNAVCFParser {
                         $contain = true;
                         $rr = 2;
                     }
-                    if (strcmp($sections[$altColumn], ".") == 0 || $contain) {
+                    if ( strcmp($sections[$altColumn], ".") != 0 || $contain || strcasecmp($sections[$filterColumn], "PASS") != 0 || strcasecmp($sections[$refColumn], "A") != 0) { //
                         continue;
                     }
                     $formatColumns = explode(":", $sections[$formatColumnIndex]);
@@ -64,18 +62,16 @@ class RNAVCFParser {
                         }
                         $tableBuilders = $tableBuilders ."alu varchar(1) default 'F',index(chrom,pos)";
                         for ($j = 0, $len = count($sampleNames); $j < $len; $j++) {
-                            $tableName[$j] = $userid ."_" .$sampleNames[$j] ."_rnavcf" ."_" .date("Ymdhisa");
-                                DatabaseManager::deleteTable($con, $tableName[$j]);
-                            $createClause = "create table " .$tableName[$j] ."($tableBuilders)";
-                            $v = mysqli_query($con, $createClause);
-                            if (!$v) {
-                                throw new Exception("Error create RNATable.");
+                            $tableName[$j] = $sampleNames[$j] ."_" ."dnavcf";
+                            DatabaseManager::deleteTable($con, $tableName[$j]);
+                            $u = mysqli_query($con, "create table " .$tableName[$j] ."($tableBuilders)");
+                            if (!$u) {
+                                throw new Exception("Error create dnatable");
                             }
                         }
                         DatabaseManager::commit($con);
                         $hasEstablishTable = true;
                     }
-
                     $sqlClause = "insert into " .$tableName[$i - $formatColumnIndex -1] ."(";
                     for ($j = 0; $j < $formatColumnIndex; $j++) {
                         $sqlClause = $sqlClause .$columnStrings[$j] .",";
@@ -114,10 +110,11 @@ class RNAVCFParser {
             DatabaseManager::commit($con);
             DatabaseManager::setAutoCommit($con, true);
         } catch (Exception $e) {
-            REDLog::writeInfoLog($e->getMessage());
+            REDLog::writeErrLog($e->getMessage());
         }
-        REDLog::writeInfoLog("End parsing RNA VCF file...");
+        REDLog::writeInfoLog("End parsing DNA VCF file");
         return $tableName;
     }
+
 }
 ?>

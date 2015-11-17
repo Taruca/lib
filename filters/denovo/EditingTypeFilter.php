@@ -1,12 +1,12 @@
 <?php
 
-class RnaEditingDetector {
-
+class EditingTypeFilter {
+//tested
     public function __construct() {}
 
-    function performEditingTypeFilter($con, $previousTable, $currentTable, $args) {
-
-        TableCreator::createFilterTable($con,$previousTable, $currentTable);
+    static function performEditingTypeFilter($con, $previousTable, $currentTable, $args) {
+        REDLog::writeInfoLog('Star executing Editing Type Filter');
+        TableCreator::createFilterTable($con, $previousTable, $currentTable);
         $refAlt = $args;
         $refAlt2 = REDTools::getNegativeStrandEditingType($refAlt);
 
@@ -33,7 +33,7 @@ class RnaEditingDetector {
         REDLog::writeInfoLog('End executing Editing Type Filter');
     }
 
-    function getName() {
+    static function getName() {
         return "etFilter";
     }
 }

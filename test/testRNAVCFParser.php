@@ -6,7 +6,8 @@ include '../dataparser/RNAVCFParser.php';
 
 $vcfPath = 'G:\Taruca\data\BJ22.snvs.hard.filtered.vcf';
 $con = DatabaseConnect::mysqlConnect();
+$userid = 1;
 
-RNAVCFParser::parseMultiRNAVCFFile($con,$vcfPath);
+RNAVCFParser::parseMultiRNAVCFFile($con,$vcfPath, $userid);
 echo 'success';
 ?>

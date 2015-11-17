@@ -1,14 +1,14 @@
 <?php
-
+//tested
 include '../../REDTools/REDLog.php';
 include '../../database/DatabaseManager.php';
 include '../../database/DatabaseConnect.php';
-include '../../dataparser/RefGeneParser.php';
+include '../../dataparser/GTFParser.php';
 include '../../database/TableCreator.php';
 
-$filePath = 'G:/Taruca/data/BJ22_sites.hard.filtered.vcf';
+$filePath = 'G:/Taruca/data/genes.gtf';
 $con = DatabaseConnect::mysqlConnect();
 
-RefGeneParser::loadRefSeqGeneTable($con, $filePath);
+GTFParser::loadSpliceJunctionTable($con, $filePath);
 echo 'success';
 ?>

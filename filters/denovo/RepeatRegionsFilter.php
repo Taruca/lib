@@ -1,7 +1,8 @@
 <?php
 class RepeatRegionsFilter {
-
+//tested
     function __construct(){}
+
     static function performRepeatRegionsFilter($con, $previousTable, $currentTable, $args) {
         TableCreator::createFilterTable($con, $previousTable, $currentTable);
         REDLog::writeInfoLog("Start performing Repeat Regions Filter");
@@ -15,7 +16,7 @@ class RepeatRegionsFilter {
                 throw new Exception("Error execute sqlA clause in performRepeatRegionsFilter");
             }
             REDLog::writeInfoLog("Start finding sites in Alu Regions");
-            $tempTable = getRandomString(10);
+            $tempTable = REDTools::getRandomString(10);
             $sqlClause2 = "create temporary table $tempTable like $currentTable";
             $b = mysqli_query($con, $sqlClause2);
             if(!$b) {
@@ -44,6 +45,10 @@ $repeatTable.end>=$previousTable.pos and $repeatTable.type='SINE/Alu')";
             REDLog::writeErrLog($e->getMessage());
         }
         REDLog::writeInfoLog("End performing Repeat Regions Filter");
+    }
+
+    static function getName() {
+        return "rrFilter";
     }
 }
 ?>

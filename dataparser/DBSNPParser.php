@@ -43,8 +43,8 @@ class DBSNPParser {
                     }
                 }
                 fclose($fp);
-                $sqlClause = "load data local infile '$dbSNPPath' into table $dbSNPTable
-				fields terminated by '\t' lines terminated by '\n' IGNORE $count LINES";
+                $sqlClause = "load data local infile '$dbSNPPath' into table $dbSNPTable IGNORE $count LINES";
+                //fields terminated by '\t' lines terminated by '\n'
                 echo $sqlClause;
                 $v = mysqli_query($con, $sqlClause);
                 if (!$v) {
