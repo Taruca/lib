@@ -4,8 +4,6 @@ class RNAVCFParser {
     function __construct() {}
 
     static function parseMultiRNAVCFFile($con, $vcfPath, $userid) {
-        //use userid = 1 to test
-        $userid = 1;
 
         $altColumn = 4;
         $infoColumn = 7;

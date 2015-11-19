@@ -3,7 +3,7 @@ class DNAVCFParser {
 //tested
     function __construct() {}
 
-    static function parseMultiDNAVCFFile($con, $vcfPath) {
+    static function parseMultiDNAVCFFile($con, $vcfPath, $userid) {
 
         $refColumn = 3;
         $altColumn = 4;
@@ -62,7 +62,7 @@ class DNAVCFParser {
                         }
                         $tableBuilders = $tableBuilders ."alu varchar(1) default 'F',index(chrom,pos)";
                         for ($j = 0, $len = count($sampleNames); $j < $len; $j++) {
-                            $tableName[$j] = $sampleNames[$j] ."_" ."dnavcf";
+                            $tableName[$j] = $userid ."_" .$sampleNames[$j] ."_dnavcf" ."_" .date("Ymdhisa");
                             DatabaseManager::deleteTable($con, $tableName[$j]);
                             $u = mysqli_query($con, "create table " .$tableName[$j] ."($tableBuilders)");
                             if (!$u) {

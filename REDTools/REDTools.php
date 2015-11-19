@@ -76,5 +76,18 @@ class REDTools {
         }
     }
 
+    static function writeTableIntoDb($con, $userid, $tableName) {
+        $sqlClause1 = "select tables from users where id = '" .$userid ."'";
+        $result = mysqli_query($con, $sqlClause1);
+        while($row = mysqli_fetch_array($result)) {
+            $priorTable = $row['tables'];
+        }
+
+        $nowTables = $priorTable . "/" . $tableName;
+        $sqlClause2 = "update users set tables = '" .$nowTables ."' where id = '" .$userid ."'";
+        mysqli_query($con, $sqlClause2);
+
+    }
+
 }
 ?>

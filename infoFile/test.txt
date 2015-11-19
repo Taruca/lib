@@ -1,2 +1,2 @@
 #username	RNAVcfFileName	DNAVcfFileName	etArgs	qcArgs	sjArgs	drArgs	lrArgs
-1	BJ22.snvs.hard.filtered.vcf	null	AG	20/6	2	AG	4
+1	BJ22.snvs.hard.filtered.vcf	BJ22_sites.hard.filtered.vcf	AG	20/6	2	AG	4

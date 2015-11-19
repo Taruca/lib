@@ -1,26 +1,47 @@
-Start parsing RNA VCF file......2015-11-17 03:57:19pm
-End parsing RNA VCF file.........2015-11-17 04:00:21pm
-Star executing Editing Type Filter......2015-11-17 04:00:21pm
-End executing Editing Type Filter......2015-11-17 04:00:26pm
-Start performing Quality Control Filter......2015-11-17 04:00:27pm
-End performing Quality Control Filter......2015-11-17 04:00:39pm
-Start performing Repeat Regions Filter......2015-11-17 04:00:40pm
-Start finding sites in Alu Regions......2015-11-17 05:02:03pm
-End finding sites in Alu Regions......2015-11-17 05:33:23pm
-End performing Repeat Regions Filter......2015-11-17 05:33:23pm
-Start performing Splice Junction Filter.........2015-11-17 05:33:23pm
-End performing Splice Junction Filter.........2015-11-17 05:52:57pm
-Start performing Known SNP Filter......2015-11-17 05:52:57pm
-End performing Known SNP Filter......2015-11-17 05:53:37pm
-Star executing Editing Type Filter......2015-11-17 05:53:37pm
-End executing Editing Type Filter......2015-11-17 05:53:49pm
-Start performing Quality Control Filter......2015-11-17 05:53:49pm
-End performing Quality Control Filter......2015-11-17 05:54:10pm
-Start performing Repeat Regions Filter......2015-11-17 05:54:10pm
-Start finding sites in Alu Regions......2015-11-17 07:22:19pm
-End finding sites in Alu Regions......2015-11-17 08:08:03pm
-End performing Repeat Regions Filter......2015-11-17 08:08:03pm
-Start performing Splice Junction Filter.........2015-11-17 08:08:03pm
-End performing Splice Junction Filter.........2015-11-17 08:28:14pm
-Start performing Known SNP Filter......2015-11-17 08:28:14pm
-End performing Known SNP Filter......2015-11-17 08:28:53pm
+RNA Editing Detector start
+--------------------------
+--------------------------
+......2015-11-18 09:54:58pm
+Start parsing RNA VCF file......2015-11-18 09:54:58pm
+End parsing RNA VCF file.........2015-11-18 09:57:59pm
+Start parsing DNA VCF file......2015-11-18 09:57:59pm
+End parsing DNA VCF file......2015-11-18 11:23:21pm
+Star executing Editing Type Filter......2015-11-18 11:23:21pm
+End executing Editing Type Filter......2015-11-18 11:23:27pm
+Start performing Quality Control Filter......2015-11-18 11:23:28pm
+End performing Quality Control Filter......2015-11-18 11:23:40pm
+Start performing Repeat Regions Filter......2015-11-18 11:23:40pm
+Start finding sites in Alu Regions......2015-11-19 12:24:46am
+End finding sites in Alu Regions......2015-11-19 12:56:16am
+End performing Repeat Regions Filter......2015-11-19 12:56:16am
+Start performing Splice Junction Filter.........2015-11-19 12:56:16am
+End performing Splice Junction Filter.........2015-11-19 01:15:46am
+Start performing Known SNP Filter......2015-11-19 01:15:46am
+End performing Known SNP Filter......2015-11-19 01:16:25am
+Start performing DNA-RNA Filter......2015-11-19 01:16:25am
+End performing DNA-RNA Filter......2015-11-19 01:16:38am
+Start performing Likelihood Rate Test Filter......2015-11-19 01:16:39am
+End performing Likelihood Rate Test Filter......2015-11-19 01:16:40am
+Star executing Editing Type Filter......2015-11-19 01:16:40am
+End executing Editing Type Filter......2015-11-19 01:16:50am
+Start performing Quality Control Filter......2015-11-19 01:16:50am
+End performing Quality Control Filter......2015-11-19 01:17:11am
+Start performing Repeat Regions Filter......2015-11-19 01:17:11am
+Start finding sites in Alu Regions......2015-11-19 02:45:36am
+End finding sites in Alu Regions......2015-11-19 03:32:15am
+End performing Repeat Regions Filter......2015-11-19 03:32:15am
+Start performing Splice Junction Filter.........2015-11-19 03:32:15am
+End performing Splice Junction Filter.........2015-11-19 03:52:10am
+Start performing Known SNP Filter......2015-11-19 03:52:10am
+End performing Known SNP Filter......2015-11-19 03:52:49am
+Start performing DNA-RNA Filter......2015-11-19 03:52:49am
+End performing DNA-RNA Filter......2015-11-19 03:53:01am
+Start performing Likelihood Rate Test Filter......2015-11-19 03:53:01am
+End performing Likelihood Rate Test Filter......2015-11-19 03:53:02am
+------------------------
+------------------------
+RNA Editing Detector end
+
+
+
+......2015-11-19 03:53:02am
